@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SmartBlend — Smart mix, smart choice",
+  title: "SmartBlend Premix — Smart mix, smart choice",
   description:
-    "Smart mix, smart choice, SmartBlend. Discover thoughtful picks made for everyday living.",
+    "Smart mix, smart choice, SmartBlend. Explore convenient ready-to-cook Indian premixes for everyday favourites.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
