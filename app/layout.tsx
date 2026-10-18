@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Morrow — Thoughtful things for every day",
+  title: "SmartBlend — Smart mix, smart choice",
   description:
-    "Discover thoughtful pieces for slower mornings, well-loved homes, and the lovely in-between.",
+    "Smart mix, smart choice, SmartBlend. Discover thoughtful picks made for everyday living.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

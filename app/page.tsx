@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const products = [
   {
     name: "Pebble ceramic mug",
@@ -66,13 +68,17 @@ const categories = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#fbfaf7] text-[#252820]">
-      <div className="bg-[#282c25] px-4 py-2.5 text-center text-xs font-medium tracking-[0.12em] text-white sm:text-sm">
-        A little treat: free shipping on orders over $75
-      </div>
-
+      
       <header className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
-        <a href="#" className="text-xl font-bold tracking-[0.18em]" aria-label="Morrow home">
-          MORROW<span className="text-[#9b7358]">.</span>
+        <a href="#" className="rounded-md bg-white" aria-label="SmartBlend home">
+          <Image
+            src="/smartblend_logo.png"
+            alt="SmartBlend"
+            width={2000}
+            height={800}
+            priority
+            className="h-auto w-28 sm:w-36"
+          />
         </a>
         <nav aria-label="Main navigation" className="hidden items-center gap-9 text-sm text-[#62645b] md:flex">
           <a className="transition-colors hover:text-[#252820]" href="#featured">Shop</a>
@@ -90,7 +96,7 @@ export default function Home() {
       <section className="mx-auto grid max-w-7xl gap-8 px-5 pb-16 pt-5 sm:px-8 md:grid-cols-2 md:items-center md:gap-12 md:pb-24 md:pt-10">
         <div className="max-w-xl py-8 md:py-12">
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-[#9b7358]">
-            Good things for everyday
+            Smart mix, smart choice, SmartBlend
           </p>
           <h1 className="text-5xl font-medium leading-[1.06] tracking-[-0.05em] sm:text-6xl lg:text-7xl">
             Make room for
@@ -202,9 +208,17 @@ export default function Home() {
 
       <footer className="bg-[#282c25] px-5 py-8 text-white sm:px-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
-          <a href="#" className="text-lg font-bold tracking-[0.18em]">MORROW.</a>
-          <p className="text-sm text-white/65">Thoughtful things for every day.</p>
-          <p className="text-xs text-white/50">© 2026 Morrow. Made with care.</p>
+          <a href="#" className="rounded-md bg-white" aria-label="SmartBlend home">
+            <Image
+              src="/smartblend_logo.png"
+              alt="SmartBlend"
+              width={2000}
+              height={800}
+              className="h-auto w-28 sm:w-36"
+            />
+          </a>
+          <p className="text-sm text-white/65">Smart mix, smart choice, SmartBlend.</p>
+          <p className="text-xs text-white/50">© 2026 SmartBlend. Made with care.</p>
         </div>
       </footer>
     </main>
